@@ -142,7 +142,13 @@ img {
 .navigation-link:hover,
 .navigation-link:focus,
 .contact:hover,
-.contact:focus {
+.contact:focus,
+.contact-mail:hover,
+.contact-mail:focus,
+.contact-tel:hover,
+.contact-tel:focus,
+.contact-tel-icon:hover,
+.contact-tel-icon:focus {
   color: var(--accent-color);
 }
 
@@ -151,6 +157,10 @@ img {
 .contact-tel {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.contact-mail-icon {
+  margin-right: 10px;
 }
 
 .contact-mail,
