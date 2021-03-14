@@ -3,8 +3,7 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --accent-color: #2196f3;
-  --first-alternative-accent-color: #188ce8;
-  --second-alternative-accent-color: #2196f3;
+  --alternative-accent-color: #188ce8;
   --first-text-color: #212121;
   --second-text-color: #757575;
   --alternative-second-text-color: rgba(255, 255, 255, 0.6);
@@ -146,10 +145,13 @@ img {
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-tel:hover,
-.contact-tel:focus,
-.contact-tel-icon:hover,
-.contact-tel-icon:focus {
+.contact-tel:focus {
   color: var(--accent-color);
+}
+
+.contact-mail:hover .contact-mail-icon,
+.contact-mail:focus .contact-tel-icon {
+  fill: currentColor;
 }
 
 .navigation-link,
@@ -158,9 +160,10 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-.contact-mail-icon {
+.contact-mail-icon,
+.contact-tel-icon {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .contact-mail,
@@ -179,6 +182,7 @@ img {
 .hero {
   text-align: center;
   max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--dark-background-color);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -227,7 +231,7 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--first-alternative-accent-color);
+  background-color: var(--alternative-accent-color);
 }
 
 /* HERO END */
@@ -348,6 +352,33 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+  margin-bottom: 16px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--third-text-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* НАША КОМАНДА END*/
@@ -389,7 +420,7 @@ img {
 
 .filter-btn:hover,
 .filter-btn:focus {
-  background-color: var(--second-alternative-accent-color);
+  background-color: var(--accent-color);
   color: var(--third-text-color);
 }
 
