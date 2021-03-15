@@ -137,6 +137,28 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contact-mail,
+.contact-tel {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--second-text-color);
+  align-items: baseline;
+  }
+
+.contact-mail-icon,
+.contact-tel-icon {
+  margin-right: 10px;
+  cursor: pointer;
+  fill: currentColor;
 }
 
 .navigation-link:hover,
@@ -155,28 +177,6 @@ img {
 .contact-tel:hover .contact-tel-icon,
 .contact-tel:focus .contact-tel-icon {
   fill: currentColor;
-}
-
-.navigation-link,
-.contact-mail,
-.contact-tel {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contact-mail-icon,
-.contact-tel-icon {
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.contact-mail,
-.contact-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--second-text-color);
 }
 
 /* HEADER END */
@@ -510,29 +510,26 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   flex-basis: calc((100% - 180px) / 6);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   min-height: 90px;
+  border: 1px solid var(--social-icons-color-light-theme);
+  color: var(--social-icons-color-light-theme);
 }
 
-.regular-customers-icon-box:hover .regular-customers-icon,
-.regular-customers-icon-box:focus .regular-customers-icon {
-  fill: currentColor;
-   }
+.regular-customers-icon {
+fill: currentColor;
+}
 
-.regular-customers-icon-box:hover .regular-customers-list-item,
-.regular-customers-icon-box:focus .regular-customers-list-item {
-   border: 1px solid var(--accent-color);
+.regular-customers-list-item:hover,
+.regular-customers-list-item:focus  {
+fill: var(--accent-color);
+border: 1px solid var(--accent-color);
 }
 
 .regular-customers-list-item:hover .regular-customers-icon,
 .regular-customers-list-item:focus .regular-customers-icon {
-fill: var(--accent-color);
-}
-
-.regular-customers-icon {
-fill: var(--social-icons-color-light-theme);
+  fill: var(--accent-color);
 }
 
 /*END REGULAR CUSTOMER*/
