@@ -591,6 +591,7 @@ border: 1px solid var(--accent-color);
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 } 
 
 
@@ -604,12 +605,7 @@ border: 1px solid var(--accent-color);
     margin-right: 70px;
   }
 
-  .social-links-footer-wrapper {
-    min-width: 206px;
-    min-height: 80px;
-  }
-
-.enjoy-title {
+  .enjoy-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -626,6 +622,10 @@ border: 1px solid var(--accent-color);
   justify-content: space-between;
   }
 
+  .social-list-footer-item:not(:last-child) {
+  margin-right: 10px;
+  }
+
 .social-list-footer-link {
   display: flex;
   align-items: center;
@@ -633,7 +633,7 @@ border: 1px solid var(--accent-color);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: grey;
+  background-color:rgba(255, 255, 255, 0.1);
 }
 
 .social-list-footer-icon,
