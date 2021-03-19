@@ -151,7 +151,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--second-text-color);
-  align-items: baseline;
+  align-items: center;
   }
 
 .contact-mail-icon,
@@ -601,13 +601,7 @@ border: 1px solid var(--accent-color);
 } 
 
 
-.left-side-footer-wrapper,
-.social-links-footer-wrapper {
-  display: flex;
-  flex-direction: column;
-  }
-
-  .left-side-footer-wrapper {
+ .left-side-footer-wrapper {
     margin-right: 70px;
   }
 
